@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>Fashion Feet</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    
+    <h1 class="c1">Fashion Inventory Management System</h1>
+
+    <h3><a href="/create" class="c2">Add New Product</a></h3>
+    <h3><a href="/updatestock" class="c2">Update Stock</a></h3>
+    <h3><a href="/deleteproduct" class="c2">Delete Product</a></h3>
+
+    <h2>Welcome</h2>
+
+    <p>Lorem Ipsum</p>
+    <p>Lorem Ipsum</p>
+
+        <center>
+        <table>
+            <tr>
+                <th>Product ID</th>
+                <th>Category</th>
+                <th>Type</th>
+                <th>Size</th>
+                <th>Stock</th>
+                <th>Price</th>
+            </tr>
+            <tbody>
+
+            <% for(var i=0; i<data.length;i++){ %>
+                <tr>
+                    <td><%= data[i].product_id %> </td>
+                    <td><%= data[i].category %> </td>
+                    <td><%= data[i].name %> </td>
+                    <td><%= data[i].size %> </td>
+                    <td><%= data[i].quantity %> </td>
+                    <td><%= data[i].selling_price %> </td>
+                </tr> 
+                <% } %> 
+
+            </tbody>
+        </table>
+    
+    </center>
+    <footer>
+        &copy Copyright 2021.
+    </footer>
+</body>
+</html>
