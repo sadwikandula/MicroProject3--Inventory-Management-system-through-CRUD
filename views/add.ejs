@@ -35,25 +35,30 @@
                 <!-- Sidebar -->
                 <!-- Sidebar Menu -->
       <nav class="mt-2">
+      
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+	
           <li class="nav-item">
             <a href="/" class="nav-link">
               <i class="nav-icon far fa-circle text-info"></i>
               <p class="text"><b> Sales Details </b></p>
             </a>
             </li>
+	    
           <li class="nav-item">
           <a href="/create" class="nav-link">
             <i class="nav-icon far fa-circle text-info"></i>
             <p class="text"><b> Add Product </b></p>
           </a>
           </li>
+	  
           <li class="nav-item">
           <a href="/deleteproduct" class="nav-link">
             <i class="nav-icon far fa-circle text-info"></i>
             <p class="text"><b> Delete Product </b></p>
           </a>
           </li>
+	  
           <li class="nav-item">
           <a href="/updatestock" class="nav-link">
             <i class="nav-icon far fa-circle text-info"></i>
@@ -62,6 +67,7 @@
           </li>
           
         </ul>
+	
       </nav>
        <!-- /.sidebar-menu -->
 			<!-- /.sidebar -->
@@ -69,61 +75,59 @@
         <!-- Content Wrapper. Contains page content -->
 		<div class="content-wrapper">
 			
-			<section class="content-header">
-        <center>
-				<h1>INVENTORY MANAGEMENT</h1>
-      </center>
-			</section>
+	<section class="content-header">
+        	<center>
+			<h1>INVENTORY MANAGEMENT</h1>
+      		</center>
+	</section>
 			
 
         <center>
+	
         <form action="/AddData" method="POST">
             
-            <br>
-            <br>
+            <br><br>
 
-            &nbsp;&nbsp;<label>Product Id: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp; <label>Product Id: </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="number" placeholder="Enter Product ID" name="product_id">
-            <br>
-            <br>
+	    
+            <br><br>
 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Brand: </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label>Brand: </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="text" placeholder="Enter Brand" name="brand">
-            <br>
-            <br>
+	    
+            <br><br>
 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Category: </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label>Category: </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="text" placeholder="Enter category" name="category">
-            <br>
-            <br>
+	    
+            <br><br>
 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Type: </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label>Type: </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="text" placeholder="Enter name" name="name">
-            <br>
-            <br>
+            
+	    <br><br>
 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Size: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label>Size: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="number" placeholder="Enter size" name="size">
-            <br>
-            <br>
+            
+	    <br><br>
 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Stock: </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label>Stock: </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input type="number" placeholder="Enter Quantity" name="quantity">
-            <br>
-            <br>
+            
+	    <br><br>
 
 
-            &nbsp;&nbsp;<label>Cost Price: </label> &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp; <label>Cost Price: </label> &nbsp;&nbsp;&nbsp;&nbsp;
             <input type="number" placeholder="Enter cost" name="cost_price">
-            <br>
-            <br>
+	    
+            <br><br>
 
-            <label>Selling Price: </label>&nbsp;&nbsp;
+            <label>Selling Price: </label> &nbsp;&nbsp;
             <input type="number" placeholder="Enter sp" name="selling_price">
-            <br>
-            <br>
-            <br>
-
+	    
+            <br><br><br>
 
             <button class="btn btn-info" type="submit">ADD</button>
             <br>
@@ -132,7 +136,6 @@
         </form>
 
         <br>
-
 
         <a href="/">Home Page</a>
 
